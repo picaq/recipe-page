@@ -6,10 +6,12 @@ html {
 }
 
 body {
-    padding: 0 .5rem;
+    padding: 0 1rem;
     margin: 0 auto;
     max-width: 44rem;
 }
+
+img { width: 100%;}
 
 p {
     color: navy;
@@ -22,7 +24,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-weight: 400;
-    font-size: 4.4em;
+    font-size: 4.733rem;
     overflow-x: visible;
     width: 100vw;
     left: .5rem;
@@ -30,7 +32,12 @@ h1 {
     color: rgb(146, 49, 17); 
     /* transition: font-size .05s ease; */
 }
+@media only screen and (min-width: 46rem) {
+    h1 {
+    transition: font-size .05s ease;
+    }
+}
 
-@media only screen and (max-width: 44rem) {
-    h1 {font-size: 10vw; }
+@media only screen and (max-width: 46rem) {
+    h1 {font-size: calc(10.1vw - .2rem); }
 }

@@ -50,14 +50,20 @@ h1 {
 .description { transition: max-width .2s ease }
 .left { transition: margin .2s ease }
 
-@media only screen and (min-width: 66rem) { 
-    .left {
+@media only screen and (min-width: 70rem) { 
+    .left, .right {
         float: left;
     }
-    .description, .left {
+    .description, .left, .right {
         max-width: 33rem;
     }
+
+    .left p, .right p {
+        width: 100%
+    }
+
     body {
-        max-width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
     }
 }

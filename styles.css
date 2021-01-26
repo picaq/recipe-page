@@ -60,9 +60,12 @@ h1 {
     }
     .right {
         margin-left: 1rem;
+        transform: translateY( -.56rem);
     }
     body {
         max-width: 70rem;
         margin: 0 auto;
     }
 }
+
+.top { padding-bottom: .75rem }

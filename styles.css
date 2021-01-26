@@ -46,3 +46,18 @@ h1 {
 @media only screen and (max-width: 46rem) {
     h1 {font-size: calc(10.1vw - .2rem); }
 }
+
+.description { transition: max-width .2s ease }
+.left { transition: margin .2s ease }
+
+@media only screen and (min-width: 66rem) { 
+    .left {
+        float: left;
+    }
+    .description, .left {
+        max-width: 33rem;
+    }
+    body {
+        max-width: 100%;
+    }
+}

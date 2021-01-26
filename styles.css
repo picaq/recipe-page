@@ -16,7 +16,7 @@ body {
     max-width: 44rem;
 }
 
-img { width: 100%;}
+img { width: 100%; }
 
 p {
     color: navy;
@@ -32,20 +32,24 @@ h1 {
     font-weight: 400;
     font-size: 4.733rem;
     overflow-x: visible;
-    width: 100vw;
+    width: calc(100vw - 2rem);
+    /* padding-right: -50vw; */
+    overflow-x: visible;
+    /* background: pink; */
     left: .5rem;
     transform: translateX(-.1em);
     color: rgb(146, 49, 17); 
-    /* transition: font-size .05s ease; */
+    transition: font-size .05s ease;
 }
 @media only screen and (min-width: 46rem) {
     h1 {
     transition: font-size .05s ease;
+    max-width: calc(100% + 2rem);
     }
 }
 
 @media only screen and (max-width: 46rem) {
-    h1 {font-size: calc(10.1vw - .2rem); }
+    h1 {font-size: calc(10.2vw - .18rem); }
 }
 
 .description { transition: max-width .2s ease }

@@ -52,8 +52,8 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 46rem) {
-    h1 {font-size: calc(10.2vw - .18rem); }
+@media only screen and (max-width: 47rem) {
+    h1 {font-size: calc(10.8vw - .33rem); }
 }
 
 .description { transition: max-width .2s ease }
@@ -125,3 +125,6 @@ a:hover { color: rgb(49, 73, 32); }
 a:visited { color: rgb(116, 18, 31); }
 
 img + p { text-align: right ; font-style: italic }
+
+/* debugging */
+/* section, div {background-color: pink} */

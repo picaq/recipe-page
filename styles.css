@@ -2,7 +2,7 @@
 
 html {
     background: whitesmoke;
-    background: rgb(243, 239, 233);
+    background: rgb(243, 241, 236);
 }
 
 body {
@@ -16,7 +16,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-    color: rgb(146, 49, 17); 
+    color: rgb(206, 150, 87); 
     font-family: 'Elsie Swash Caps', cursive;
 }
 
@@ -27,6 +27,8 @@ h1 {
     width: 100vw;
     left: .5rem;
     transform: translateX(-.1em);
+    color: rgb(146, 49, 17); 
+    /* transition: font-size .05s ease; */
 }
 
 @media only screen and (max-width: 44rem) {

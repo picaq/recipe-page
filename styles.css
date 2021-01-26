@@ -7,6 +7,8 @@ html {
 
 body {
     padding: 0 .5rem;
+    margin: 0 auto;
+    max-width: 44rem;
 }
 
 p {
@@ -20,5 +22,13 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-weight: 400;
-    font-size: 9.5vw;
+    font-size: 4.4em;
+    overflow-x: visible;
+    width: 100vw;
+    left: .5rem;
+    transform: translateX(-.1em);
+}
+
+@media only screen and (max-width: 44rem) {
+    h1 {font-size: 10vw; }
 }

@@ -20,6 +20,7 @@ img { width: 100%; }
 
 p {
     color: navy;
+    color: rgb(49, 73, 32);
     padding-bottom: .75rem;
 }
 
@@ -73,3 +74,32 @@ h1 {
 }
 
 .top { padding-bottom: .75rem }
+
+ul {
+    list-style: none;
+}
+
+ul li::before { 
+    color: rgb(49, 73, 32);
+    color: rgb(88, 138, 53);
+    content: "☙";
+    font-weight: bold;
+    font-size: larger;
+    padding: 0; margin: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    vertical-align: -.1em;
+}
+
+section[class] {
+    margin-bottom: .75rem;
+} 
+
+a { 
+    color: rgb(88, 138, 53); 
+    transition: color .12s ease;
+}
+a:hover { color: rgb(49, 73, 32); }
+a:visited { color: rgb(116, 18, 31); }

@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    padding: 0 1rem;
-    margin: 1rem auto;
+    padding: 1rem;
+    margin: 0 auto;
     max-width: 44rem;
 }
 
@@ -20,6 +20,7 @@ img { width: 100%;}
 
 p {
     color: navy;
+    padding-bottom: .75rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -57,13 +58,11 @@ h1 {
     .description, .left, .right {
         max-width: 33rem;
     }
-
-    .left p, .right p {
-        width: 100%
+    .right {
+        margin-left: 1rem;
     }
-
     body {
-        max-width: 72rem;
+        max-width: 70rem;
         margin: 0 auto;
     }
 }

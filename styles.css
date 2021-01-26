@@ -14,6 +14,7 @@ body {
     padding: 1rem;
     margin: 0 auto;
     max-width: 44rem;
+    color: rgb(48, 39, 35);
 }
 
 img { width: 100%; }
@@ -27,7 +28,9 @@ p {
 h1, h2, h3, h4, h5 {
     color: rgb(206, 150, 87); 
     font-family: 'Elsie Swash Caps', cursive;    
+    text-shadow: .04rem .03rem .04rem rgb(146, 49, 17, .2);
 }
+
 
 h1 {
     font-weight: 400;
@@ -93,13 +96,19 @@ ul li::before {
     vertical-align: -.1em;
 }
 
+ul li:hover::before {
+    color: rgb(146, 49, 17); 
+}
+
 section[class] {
     margin-bottom: .75rem;
 } 
 
-a { 
+a, li::before { 
     color: rgb(88, 138, 53); 
     transition: color .12s ease;
 }
 a:hover { color: rgb(49, 73, 32); }
 a:visited { color: rgb(116, 18, 31); }
+
+img + p { text-align: right ; font-style: italic }

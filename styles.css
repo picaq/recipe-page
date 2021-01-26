@@ -82,7 +82,7 @@ ul {
     list-style: none;
 }
 
-ul li::before { 
+ul li::before, ol li::after { 
     color: rgb(49, 73, 32);
     color: rgb(88, 138, 53);
     content: "☙";
@@ -94,6 +94,19 @@ ul li::before {
     width: 1rem;
     margin-left: -1rem;
     vertical-align: -.1em;
+}
+
+ol li::after {
+    margin-left: .25rem;
+    margin-right: -1rem;
+    /* visibility: hidden; */
+    color: rgba(116, 18, 31, 0);
+    transition: color .1s ease;
+}
+
+ol li:hover::after {
+    /* visibility: unset; */
+    color: rgba(116, 18, 31, 1); 
 }
 
 ul li:hover::before {

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+
 html {
     background: whitesmoke;
     background: rgb(243, 239, 233);
+}
+
+body {
+    padding: 0 .5rem;
 }
 
 p {
@@ -9,6 +15,10 @@ p {
 
 h1, h2, h3, h4, h5 {
     color: rgb(146, 49, 17); 
+    font-family: 'Elsie Swash Caps', cursive;
 }
 
-
+h1 {
+    font-weight: 400;
+    font-size: 9.5vw;
+}

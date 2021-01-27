@@ -125,6 +125,12 @@ a, li::before {
 a:hover { color: rgb(49, 73, 32); }
 a:visited { color: rgb(116, 18, 31); }
 
+nav li::before {
+    position: absolute;
+    margin-left: 1em;
+    transform: translateY(1.9em)
+}
+
 img + p { text-align: right ; font-style: italic }
 
 /* debugging */

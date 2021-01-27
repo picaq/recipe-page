@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-weight: 400;
-    font-size: 4.733rem;
+    font-size: 4.51rem;
     overflow-x: visible;
     width: calc(100vw - 2rem);
     /* padding-right: -50vw; */
@@ -52,7 +52,7 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 47rem) {
+@media only screen and (max-width: 45rem) {
     h1 {font-size: calc(10.8vw - .33rem); }
 }
 

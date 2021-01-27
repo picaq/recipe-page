@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1rem 0;
     margin: 0 auto;
     max-width: 44rem;
     color: rgb(48, 39, 35);
@@ -128,3 +129,8 @@ img + p { text-align: right ; font-style: italic }
 
 /* debugging */
 /* section, div {background-color: pink} */
+
+.container {
+    padding: 0;
+    margin: 0;
+}

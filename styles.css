@@ -195,7 +195,6 @@ img + p { text-align: right ; font-style: italic }
 .right
 .btn-primary {
     color: #fff;
-    font-family: ;
     background-color:rgb(88, 138, 53, .8);
     border-color:rgb(49, 73, 32);
 }

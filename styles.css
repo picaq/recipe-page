@@ -8,6 +8,7 @@
 html {
     background: whitesmoke;
     background: rgb(243, 241, 236);
+    background: rgba(188, 156, 143, 0.404);
 }
 
 body {
@@ -17,6 +18,19 @@ body {
     max-width: 44rem;
     color: rgb(48, 39, 35);
 }
+.form-control,
+html, body { background: rgb(252, 250, 247);
+}
+/* body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    background: rgb(252, 250, 247);
+    top:0; left:0; bottom:0;
+    padding-bottom: 100vh;
+    display: block;
+    padding-bottom: 100vh;;
+} */
 
 img { width: 100%; }
 
@@ -25,13 +39,23 @@ p {
     color: rgb(49, 73, 32);
     padding-bottom: .75rem;
 }
-
+.navbar-light .navbar-brand,
 h1, h2, h3, h4, h5 {
     color: rgb(206, 150, 87); 
     font-family: 'Elsie Swash Caps', cursive;    
     text-shadow: .04rem .03rem .04rem rgb(146, 49, 17, .2);
 }
 
+.navbar-light .navbar-brand:hover {
+    color:rgba(116, 18, 31, 1)
+}
+
+/* .navbar-light .navbar-toggler-icon {
+    path: blue;
+} */
+.bg-light {
+    background-color:rgba(188, 143, 143, 0.144) !important
+}
 
 h1 {
     font-weight: 400;
@@ -60,7 +84,8 @@ h1 {
 .description { transition: max-width .2s ease }
 .left { transition: margin .2s ease }
 
-@media only screen and (min-width: 70rem) { 
+/* @media only screen and (min-width: 70rem) {  */
+@media only screen and (min-width: 1200px) { 
     .left, .right {
         float: left;
     }
@@ -118,12 +143,21 @@ section[class] {
     margin-bottom: .75rem;
 } 
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,
 a, li::before { 
     color: rgb(88, 138, 53); 
     transition: color .12s ease;
 }
 a:hover { color: rgb(49, 73, 32); }
 a:visited { color: rgb(116, 18, 31); }
+
+
+.navbar-light .navbar-nav .nav-link {
+    color:rgba(116, 18, 31, .7)
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:rgba(116, 18, 31, .9)
+}
 
 nav li::before {
     position: absolute;
@@ -134,9 +168,23 @@ nav li::before {
 img + p { text-align: right ; font-style: italic }
 
 /* debugging */
-/* section, div {background-color: pink} */
+section, div {background-color: rgba(255, 192, 203, 0.548)}
 
 .container {
     padding: 0;
     margin: 0;
+}
+
+.btn-outline-success {
+    color:rgb(88, 138, 53);
+    border-color:rgb(88, 138, 53);
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: rgb(88, 138, 53);
+    border-color: rgb(88, 138, 53);
+}
+.btn-outline-success:active {
+    background-color: rgb(49, 73, 32);
 }

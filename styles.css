@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5 {
     color: rgb(206, 150, 87); 
     font-family: 'Elsie Swash Caps', cursive;    
     text-shadow: .04rem .03rem .04rem rgb(146, 49, 17, .2);
+    margin-bottom: 0;
 }
 
 .navbar-light .navbar-brand:hover {
@@ -69,6 +70,7 @@ h1 {
     transform: translateX(-.1em);
     color: rgb(146, 49, 17); 
     transition: font-size .05s ease;
+    padding-top: .5rem;
 }
 @media only screen and (min-width: 46rem) {
     h1 {
@@ -90,7 +92,7 @@ h1 {
         float: left;
     }
     .description, .left, .right {
-        max-width: 33rem;
+        max-width: 34.5rem;
     }
     .right {
         margin-left: 1rem;
@@ -168,7 +170,7 @@ nav li::before {
 img + p { text-align: right ; font-style: italic }
 
 /* debugging */
-section, div {background-color: rgba(255, 192, 203, 0.548)}
+/* section, div {background-color: rgba(255, 192, 203, 0.548)} */
 
 .container {
     padding: 0;
